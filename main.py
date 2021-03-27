@@ -14,11 +14,12 @@ if __name__ == '__main__':
     # print('alive')
     # print(stdin)
     for line in stdin:
-        # print(line)
-        if line == '': 
+        # print(repr(line))
+        if line == '' or line =='\n': 
             break
         d=[float(x) for x in line.split(',')]
-        print(d)
+        
+        # print(d)
         for i in range(len(d)):
 
         # for arg in sys.argv[1:]:
