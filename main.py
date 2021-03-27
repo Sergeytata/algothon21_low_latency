@@ -14,17 +14,17 @@ if __name__ == '__main__':
     # print('alive')
     # print(stdin)
     for line in stdin:
-        print(line)
+        # print(line)
         if line == '': 
             break
         d=[float(x) for x in line.split(',')]
-        # print(d)
-    for i in range(len(d)):
+        print(d)
+        for i in range(len(d)):
 
-    # for arg in sys.argv[1:]:
-        x_i[0:4] = x_i[1:5]
-        x_i[4] = float(d[i])
-        print(clf.predict(x_i))
+        # for arg in sys.argv[1:]:
+            x_i[0:4] = x_i[1:5]
+            x_i[4] = float(d[i])
+            print(clf.predict([x_i]))
     
     # print(sys.argv[1:])
     # print('Hello World!')
